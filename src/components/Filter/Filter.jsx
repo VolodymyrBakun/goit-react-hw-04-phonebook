@@ -8,7 +8,7 @@ export const Filter = ({ filter, handleSearch }) => {
       <FilterInput
         type="text"
         value={filter}
-        onChange={event => handleSearch(event)}
+        onChange={event => handleSearch(event.target.value)}
       />
     </>
   );
